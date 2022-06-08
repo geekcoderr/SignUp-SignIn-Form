@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Allerta+Stencil&family=Comfortaa:wght@700&family=Creepster&family=Fredoka+One&family=Indie+Flower&family=Kalam:wght@300;400&family=Macondo&family=Patrick+Hand&family=Permanent+Marker&family=Poppins:ital,wght@0,900;1,900&family=Raleway:ital,wght@0,600;0,900;1,700&family=Ubuntu&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-div {
+    height: 78vh;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    /* background-color: #B6B6A6; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30vh 50px 30vh 50px;
+    overflow: hidden;
+    transition: 2s;
+}
+
+.div-1 {
+    height: 100%;
+    width: 40%;
+    background-color: floralwhite;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: flex-start;
+    transition: 2s;
+    transition-timing-function: ease;
+    color: #F22233;
+    border-radius: 30vh 0% 0% 50px;
+
+}
+
+.div-2 {
+    height: 100%;
+    width: 60%;
+    background-color: #F22233;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: flex-end;
+    transition: 2s;
+    transition-timing-function: ease;
+    color: floralwhite;
+    border-radius: 0% 50px 30vh 0%;
+}
+
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn span,
+.signInBtn span,
+.signUpBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after,
+.signInBtn span:after,
+.signUpBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span,
+.signInBtn:hover span,
+.signUpBtn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after,
+.signInBtn:hover span:after,
+.signUpBtn:hover span:after {
+    opacity: 1;
+    right: 0
+}
+
+.signInArea {
+    /* border: #f4511e solid; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    align-self: center;
+    height: 90%;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sign {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.textInput,
+.passwordInput,
+.emailInput,
+.confirmPasswordInput {
+    height: 50px;
+    width: 210px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0px 5px 0px 20px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #D9D9D9;
+    border-radius: 1vh;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+
+}
+
+.textInput::placeholder,
+.passwordInput::placeholder {
+    font-stretch: extra-condensed;
+}
+
+.textInput:hover,
+.passwordInput:hover,
+.emailInput:hover,
+.confirmPasswordInput:hover {
+    transition: 0.3s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.signInBtn {
+    /* background-color: #F22233; */
+    background: none;
+    border: none;
+    /* color: #FFFFFF; */
+    color: #F22233;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.signUpBtn {
+    /* background-color: #F22233; */
+    background: none;
+    border: none;
+    /* color: #FFFFFF; */
+    color: #F22233;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.1s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    display: none;
+}
+
+.emailInput {
+    display: none;
+}
+
+.confirmPasswordInput {
+    display: none;
+}
+
+.div-2-data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-self: center;
+    /* color:#f4511e; */
+    mix-blend-mode: luminosity;
+}
+
+.mahadevImg {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin-bottom: 50px;
+}
+
+.shiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1360px) {
+
+    /* Styles */
+    body {
+        transition: 2s;
+        background-color: #f4511e;
+    }
+
+    .main-div {
+        flex-direction: row;
+        border-radius: 20vh 10vh 20vh 10vh;
+        height: 70vh;
+        width: 80vw;
+    }
+
+    .div-1 {
+        width: 100%;
+        height: 40%;
+        border-radius: 20vh 5vh 0vh 0vh;
+    }
+
+    .div-2 {
+        width: 100%;
+        height: 60%;
+        border-radius: 0vh 0vh 20vh 10vh;
+    }
+
+    .mahadevImg {
+        margin-top: -50%;
+    }
+
+    .div-2-data {
+        margin-top: 200px;
+    }
+
+    .textInput:hover,
+    .passwordInput:hover,
+    .emailInput:hover,
+    .confirmPasswordInput:hover {
+        transition: 0.3s;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 300px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    .shiv {
+        font-size: 40px;
+    }
+    .signInArea{
+        /* border:#f4511e solid; */
+        width: 60%;
+        margin-bottom: 12%;
+        margin-left: 20px;
+    }
+}
